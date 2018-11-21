@@ -23,138 +23,975 @@
     <!-- Custom styles for this template-->
     <link href="css/sb-admin.css" rel="stylesheet">
     <style type="text/css">
-      @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
-#team {
-    background: #eee !important;
+@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}
+
+@charset "UTF-8";
+/* CSS Document */
+@font-face {
+    font-family: 'open_sansbold';
+    src: url('../fonts/OpenSans-Bold-webfont.eot');
+    src: url('../fonts/OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans-Bold-webfont.woff') format('woff'),
+         url('../fonts/OpenSans-Bold-webfont.ttf') format('truetype'),
+         url('../fonts/OpenSans-Bold-webfont.svg#open_sansbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
-.btn-primary:hover,
-.btn-primary:focus {
-    background-color: #108d6f;
-    border-color: #108d6f;
-    box-shadow: none;
-    outline: none;
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('../fonts/OpenSans-Regular-webfont.eot');
+    src: url('../fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans-Regular-webfont.woff') format('woff'),
+         url('../fonts/OpenSans-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/*@font-face {
+    font-family: 'open_sanslight';
+    src: url('../fonts/OpenSans-Light-webfont.eot');
+    src: url('O../fonts/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans-Light-webfont.woff') format('woff'),
+         url('../fonts/OpenSans-Light-webfont.ttf') format('truetype'),
+         url('../fonts/OpenSans-Light-webfont.svg#open_sanslight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}*/
+
+
+
+body{
+    margin:0;
+    padding:0;
+    font-family: 'open_sansregular';
+    font-size:16px;
+    line-height: 18px;
+}
+h2{
+    font-size: 30px;
+    /*font-family: 'open_sansbold';*/
+    color:#582B6A;
+    margin: 25px 0 0;
+    line-height: 30px;
+}
+h5{
+    font-size: 20px;
+    line-height: 20px;
+    margin: 15px 0 0;
+}
+header{
+    background-color:#582B6A;
+}
+header img{
+    max-width:150px;
+}
+.btn{
+box-sizing: border-box;
+margin: 0;
+text-decoration: none;
+font-size: 14px;
+cursor: pointer;
+display: inline-block;
+margin-bottom: 0;
+font-weight: normal;
+text-align: center;
+vertical-align: middle;
+transition: background .2s linear, color .2s linear;
+white-space: normal;
+box-shadow: none;
+color: #fff;
+line-height: 22px;
+outline: none;
+padding: 9px 20px;
+text-shadow: none;
+filter: none;
+border-radius: 3px;
+border: 0 none;
+background-color: #c10841;
+}
+.intro{
+    height: auto;
+    overflow: hidden;
+    margin-bottom: 40px;
+    
+}
+.intro p{
+    font-size: 16px;
+    line-height: 24px;
+    text-align: justify;
+    margin: 40px 0;
+}
+.w{
+    max-width: 700px;
+    padding: 15px;
+    margin-left:auto;
+    margin-right: auto;
+}
+.contenidoForm{
+    padding: 15px;
+    margin-left:auto;
+    margin-right: auto;
+}
+/*radio button*/
+
+
+
+.wrap {
+ /* width: 90%;
+  max-width: 500px;
+  padding: 40px;
+  margin: auto;*/
+}
+.contenedor-formulario {
+  width: 100%;color: #000;
+ /* color: rgba(255,255,0,0.7);*/
+  /*padding: 50px;*/
+}
+.contenedor-formulario .formulario {
+  width: 100%;
+  margin: auto;
 }
 
-.btn-primary {
+.contenedor-formulario .formulario > div{
+    height:auto;
+    overflow: hidden;
+    padding: 20px 0 0;
+}
+.contenedor-formulario .formulario .input-group {
+  position: relative;
+  margin-bottom: 32px;
+    width: 45%;
+    float: left;
+    margin-right: 0%;
+}
+    .contenedor-formulario .formulario .input-group:last-child {
+        margin-right: 0;
+        margin-left: 5%;
+     
+}
+
+.input-group.fechaNac{
+    margin-left: 0 !important;
+    width: 50% !important;
+    padding-left:0 !important;
+    margin-top:8px;
+    margin-bottom: 0px !important;
+}
+.contenedor-formulario .formulario .input-group input[type="text"],
+.contenedor-formulario .formulario .input-group input[type="email"],
+.contenedor-formulario .formulario .input-group input[type="text2"],
+.contenedor-formulario .formulario .input-group select{
+  font-size: 16px;
+  color: #141414;
+  width: 100%;
+  outline: none;
+  padding: 15px;
+  background: none;
+  border: none;
+  border-bottom: 1px solid rgba(0,0,0,0.5);
+  transition: all 0.1s ease;
+}
+.contenedor-formulario .formulario .input-group input[type="text"]:focus,
+.contenedor-formulario .formulario .input-group input[type="text"]:active,
+.contenedor-formulario .formulario .input-group input[type="email"]:focus,
+.contenedor-formulario .formulario .input-group input[type="email"]:active,
+.contenedor-formulario .formulario .input-group input[type="text2"]:focus,
+.contenedor-formulario .formulario .input-group input[type="text2"]:active,
+.contenedor-formulario .formulario .input-group select:focus,
+.contenedor-formulario .formulario .input-group select:active{
+  outline: none;
+  border-bottom: 2px solid #ccc;
+}
+.contenedor-formulario .formulario .input-group input[type="text"].error,
+.contenedor-formulario .formulario .input-group input[type="email"].error,
+.contenedor-formulario .formulario .input-group input[type="text2"].error,
+.contenedor-formulario .formulario .input-group select.error{
+  border-bottom: 2px solid #D32F2F;
+}
+.contenedor-formulario .formulario .input-group input[type="text"].error + label,
+.contenedor-formulario .formulario .input-group input[type="email"].error + label,
+.contenedor-formulario .formulario .input-group select + label,
+.contenedor-formulario .formulario .input-group input[type="text2"].error{
+  color: #D32F2F;
+}
+.contenedor-formulario .formulario .input-group label.label{
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  margin-left: 15px;
+  font-size: 16px;
+  line-height: 16px;
+  position: absolute;
+  top: 16px;
+  left: 0;
+}
+
+.contenedor-formulario .formulario .input-group label.label.active {
+  top: -12px;
+  font-size: 12px;
+  line-height: 12px;
+  color: rgba(0,0,0,0.5);
+}
+.contenedor-formulario .formulario .input-group.radio label {
+  display: inline-block;
+  cursor: pointer;
+  color: rgba(255,255,255,0.7);
+  position: relative;
+  padding: 5px 15px 5px 51px;
+  font-size: 1em;
+  border-radius: 3px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.contenedor-formulario .formulario .input-group.radio label:hover {
+  background: rgba(255,255,255,0.3);
+}
+.contenedor-formulario .formulario .input-group.radio label:before {
+  content: "";
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  left: 15px;
+  top: 2px;
+  border-radius: 50%;
+  background: none;
+  border: 2px solid white;
+}
+.contenedor-formulario .formulario .input-group.error label{
+  color: #D32F2F;
+  
+}
+.contenedor-formulario .formulario .input-group.error label:before {
+  border: 2px solid #D32F2F;
+}
+.contenedor-formulario .formulario .input-group.error label:hover {
+  background: rgba(211, 47, 47, 0.2);
+}
+.contenedor-formulario .formulario .input-group.radio input[type="radio"] {
+  display: none;
+}
+.contenedor-formulario .formulario .input-group.radio input[type="radio"]:checked + label:before {
+  display: none;
+}
+.contenedor-formulario .formulario .input-group.radio input[type="radio"]:checked + label {
+  padding: 5px 15px;
+  background: white;
+  border-radius: 2px;
+  color: #ffcc08;
+}
+.contenedor-formulario .formulario input[type="submit"] {
+  background-color: #c10841;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  padding: 15px;
+  width: 100%;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.contenedor-formulario .formulario input[type="submit"]:hover {
+  background-color: #a20435;
+}
+
+
+.contenedor-formulario .formulario .input-group.selform{
+    background: url('../images/fle3.png') !important;
+    background-repeat: no-repeat !important;
+    background-position: 99% -3PX !important;
+    /* background-color: rgba(0, 0, 0, 0);*/
+    background-color: #fff !important;
+    height: 29px;
+    overflow: hidden !important;
+    border-radius:0;
+    border-bottom: 1px solid rgba(0,0,0,0.5);
+    padding-bottom: 20px;
+    width: 49%;
+    margin-right: 1%;
+    margin-left: 0;
+}
+.contenedor-formulario .formulario .input-group.selform select{
+background: transparent;
+border: none;
+height: 29px;
+padding: 5px;
+font-size: 16px;
+    width: 110%;
+}
+
+/*DATEPICKER*/
+.custom-datepicker {
+  position: relative;
+  overflow: hidden;
+  background-color: #fff;
+  border: 0.2em solid #fff;
+  border-radius: 0.2em;
+  transition: all 0.2s linear;
+  height: auto;
+}
+.custom-datepicker.active {
+  display: flex;
+  flex-flow: column nowrap;
+  height: 26em;
+}
+.custom-datepicker .date-display {
+  position: relative;
+  padding:10px;
+  max-width: 100%;
+  cursor: pointer;
+    font-size: 16px;
+    border-bottom: 1px solid rgba(0,0,0,0.5);
+}
+.custom-datepicker .date-display span {
+  color: #000;
+}
+.custom-datepicker .date-picker-ui {
+  position: relative;
+  flex-grow: 1;
+
+    padding: 10px;
+}
+.custom-datepicker .year-list,
+.custom-datepicker .month-list,
+.custom-datepicker .date-list {
+  opacity: 0;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  transition: all 0.2s linear;
+  overflow-y: auto;
+        background-color: #f6f6f6;
+
+}
+.custom-datepicker ul li {
+  font-size: 16px;
+  color: #582B6A;
+  padding: 0.1em 0 0.1em 0.5em;
+  cursor: pointer;
+}
+.custom-datepicker ul li:hover {
+  background-color: #582B6A;
+  color: #fff;
+}
+.custom-datepicker .year-list {
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.custom-datepicker .year-list.active {
+  opacity: 1;
+}
+.custom-datepicker .month-list {
+  z-index: 2;
+  top: 0;
+  right: -110%;
+  width: 110%;
+}
+.custom-datepicker .month-list.active {
+  background-color: #f6f6f6;
+  opacity: 1;
+  right: -10%;
+}
+.custom-datepicker .year-list.active li, .custom-datepicker .month-list.active li{ 
+    font-size:14px;}
+.custom-datepicker .date-list {
+  z-index: 3;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+}
+.custom-datepicker .date-list.active {
+  background-color: #f6f6f6;
+  color: #444;
+  opacity: 1;
+  bottom: auto;
+  top: 0;font-size: 10px;height: 300px;
+}
+.custom-datepicker .date-list header {
+  text-align: center;
+  font-size: 14px;
     color: #fff;
-    background-color: #007b5e;
-    border-color: #007b5e;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-bottom: 15px;
+}
+.custom-datepicker .date-list .date-row {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+}
+.custom-datepicker .date-list .date-row .date-box {
+  font-size: 1.8em;
+  width: 20%;
+  max-width: 38px;
+  padding: 0.2em 0 0.2em 0;
+  border-radius: 0.1em;
+  text-align: center;
+  cursor: pointer;
+}
+.custom-datepicker .date-list .date-row .date-box:hover {
+  background-color: #fff;
+  color: #c10841;
+}
+.date-row.ng-scope{
+    margin-left:5% !important;
+    width: 90% !important;
 }
 
-section {
-    padding: 150px 0;
-}
+/*FIN DATEPICKER*/
 
-section .section-title {
-    text-align: center;
-    color: #007b5e;
-    margin-bottom: 100px;
-    text-transform: uppercase;
-}
+.arrowText {
+ position:relative;
+ margin: 20px;
+ width:90px;
+ height: 35px;
+ background: #037ac5;
+ /*border:solid 1px #0cceff;*/
+ float: left;
+ }
 
-#team .card {
-    border: none;
-    background: #ffffff;
-}
+ .arrowText:before, .arrowText:after {
+ content: " ";
+ position: absolute;
+ display: block;
+ width: 0;
+ height: 0;
+ }
+.arrowText:hover{background: #0468a7;}
+/* RIGHT ARROW */
+ .arrowRight:before, .arrowRight:after {
+ border-bottom: 17px solid transparent;
+ border-top: 18px solid transparent;
+ top:0;
+ }
+ .arrowRight:after {
+ border-left: 16px solid #037ac5; /*Cambia el color de la flecha antes de posicionar el mouse ensima de la flecha.*/
+ right: -15px;
+ z-index: 2;
+ }
+ .arrowRight:hover:after{border-left: 16px solid #0468a7;}  
+ .arrowRight:before {
+ /*border-left: 16px solid #0cceff;*/
+ right: -16px;
+ z-index: 1;
+ }
+/* LEFT ARROW */
+ .arrowLeft:before, .arrowLeft:after {
+ border-top: 17px solid transparent;
+ border-bottom: 18px solid transparent;
+top:0px
+ }
+ .arrowLeft:after {
+ border-right: 16px solid #037ac5;
+ left: -15px;
+ z-index: 2;
+ }
+.arrowLeft:hover:after{border-right: 16px solid #0468a7;}
+ .arrowLeft:before {
+/* border-right: 16px solid #0cceff;*/
+ left: -16px;
+ z-index: 1;
+ }
+/**/
 
-.image-flip:hover .backside,
-.image-flip.hover .backside {
-    -webkit-transform: rotateY(0deg);
-    -moz-transform: rotateY(0deg);
-    -o-transform: rotateY(0deg);
-    -ms-transform: rotateY(0deg);
-    transform: rotateY(0deg);
-    border-radius: .25rem;
-}
+/*------------------------------*/
 
-.image-flip:hover .frontside,
-.image-flip.hover .frontside {
-    -webkit-transform: rotateY(180deg);
-    -moz-transform: rotateY(180deg);
-    -o-transform: rotateY(180deg);
-    transform: rotateY(180deg);
-}
+.arrowTextR {
+ position:relative;
+ margin: 20px;
+ width:90px;
+ height: 35px;
+ background: #990000;
+ /*border:solid 1px #0cceff;*/
+ float: left;
+ }
 
-.mainflip {
-    -webkit-transition: 1s;
-    -webkit-transform-style: preserve-3d;
-    -ms-transition: 1s;
-    -moz-transition: 1s;
-    -moz-transform: perspective(1000px);
-    -moz-transform-style: preserve-3d;
-    -ms-transform-style: preserve-3d;
-    transition: 1s;
-    transform-style: preserve-3d;
+ .arrowTextR:before, .arrowTextR:after {
+ content: " ";
+ position: absolute;
+ display: block;
+ width: 0;
+ height: 0;
+ }
+.arrowTextR:hover{background: #CC0000;}
+/* RIGHT ARROW 2*/
+ .arrowRightR:before, .arrowRightR:after {
+ border-bottom: 17px solid transparent;
+ border-top: 18px solid transparent;
+ top:0;
+ }
+ .arrowRightR:after {
+ border-left: 16px solid #990000; /*Cambia el color de la flecha antes de posicionar el mouse ensima de la flecha.*/
+ right: -15px;
+ z-index: 2;
+ }
+ .arrowRightR:hover:after{border-left: 16px solid #CC0000;}  /*Cambia el color de la Flecha en Rojo FF3333*/
+ .arrowRightR:before {
+ /*border-left: 16px solid #0cceff;*/
+ right: -16px;
+ z-index: 1;
+ }
+
+
+.navegadores{
+    height: auto;
+    overflow: hidden;
+    border-bottom: 1px solid rgba(0,0,0,0.5);
     position: relative;
 }
-
-.frontside {
-    position: relative;
-    -webkit-transform: rotateY(0deg);
-    -ms-transform: rotateY(0deg);
-    z-index: 2;
-    margin-bottom: 30px;
+.navegadores .arrowText.arrowLeft{
+    float:left;
+    text-align: right;
+    border-radius: 3px;
+    /*border-top-right-radius:3px;
+    border-bottom-right-radius:3px;*/
+}
+.navegadores .arrowText.arrowRight{
+    float:right;
+    text-align: left;
+    border-radius: 3px;
+    /*border-top-left-radius:3px;
+    border-bottom-left-radius:3px;*/
+}
+.navegadores .arrowTextR.arrowRightR{
+    float:right;
+    text-align: left;
+    border-radius: 3px;
+    /*border-top-left-radius:3px;
+    border-bottom-left-radius:3px;*/
+}
+.navegadores .arrowText a{
+    display:block;
+    color:#fff;
+    text-decoration:none;
+    padding: 8px 10px;
+}
+.navegadores .arrowTextR a{
+    display:block;
+    color:#fff;
+    text-decoration:none;
+    padding: 8px 10px;
+}
+.question{
+    height:auto;
+    overflow: hidden;
+}
+/*OPTIONS*/
+.opciones{
+    height:auto;
+    overflow: hidden;
+    border-bottom: 1px solid rgba(0,0,0,0.5);
+    
+}
+.opciones ul{
+    margin:0;
+    padding:0;
+}
+.opciones ul li{
+  color: #AAAAAA;
+  display: block;
+  position: relative;
+  float: left;
+  width: 12%;
+  /*height: 128px;*/
+    /*border-bottom:1px solid rgba(0,0,0,0.5);*/
 }
 
-.backside {
+.opciones ul li input[type=radio]{
+  position: absolute;
+  visibility: hidden;
+}
+
+.opciones ul li label{
+  display: block;
+  position: relative;
+  font-weight: 300;
+  font-size: 1.35em;
+  padding: 60px 25px 10px 30px;
+  margin: 0 auto;
+  height: 40px;
+  z-index: 9;
+  cursor: pointer;
+  -webkit-transition: all 0.25s linear;
+}
+
+.opciones ul li:hover label{
+    color: #44abde;
+}
+
+.opciones ul li .check{
+  display: block;
+  position: absolute;
+  border: 5px solid #AAAAAA;
+  border-radius: 100%;
+  height: 25px;
+  width: 25px;
+  top: 10px;
+  left: 20px;
+    z-index: 5;
+    transition: border .25s linear;
+    -webkit-transition: border .25s linear;
+}
+
+.opciones ul li:hover .check {
+  border: 5px solid #44abde;
+}
+
+.opciones ul li .check::before {
+  display: block;
+  position: absolute;
+    content: '';
+  border-radius: 100%;
+  height: 15px;
+  width: 15px;
+  top: 5px;
+    left: 5px;
+  margin: auto;
+    transition: background 0.25s linear;
+    -webkit-transition: background 0.25s linear;
+}
+
+input[type=radio]:checked ~ .check {
+  border: 5px solid #2790c5;
+}
+
+input[type=radio]:checked ~ .check::before{
+  background: #2790c5;
+}
+
+input[type=radio]:checked ~ label{
+  color: #2790c5;
+}
+
+
+/*FIN OPTIONS*/
+
+
+/*PROCESS*/
+.statusProcess{
     position: absolute;
-    top: 0;
-    left: 0;
-    background: white;
-    -webkit-transform: rotateY(-180deg);
-    -moz-transform: rotateY(-180deg);
-    -o-transform: rotateY(-180deg);
-    -ms-transform: rotateY(-180deg);
-    transform: rotateY(-180deg);
-    -webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
-    -moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
-    box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    width: 450px;
+    left:125px;
+    top: 28px;
+}
+.barra{
+position: absolute;
+width: 100%;
+height: 2px;
+background-color: #444;
+margin-top: 10px;
+z-index: -1;
+}
+.puntero{
+    width: 10%;
+    float: left;
+}
+.puntero span{
+display: block;
+background-color: #444;
+width: 20px;
+height: 20px;
+border-radius: 10px;
+text-align: center;
+font-size: 13px;
+color: #fff;
+margin-left: auto;
+margin-right: auto;
+font-weight: bold;
+}
+.puntero span.active{
+    background-color: #037ac5;
+
+}
+/*FIN PROCESS*/
+
+.dvgrafico{
+    margin-top: 20px;
+    height: auto;
+    overflow: hidden;
 }
 
-.frontside,
-.backside {
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -ms-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -webkit-transition: 1s;
-    -webkit-transform-style: preserve-3d;
-    -moz-transition: 1s;
-    -moz-transform-style: preserve-3d;
-    -o-transition: 1s;
-    -o-transform-style: preserve-3d;
-    -ms-transition: 1s;
-    -ms-transform-style: preserve-3d;
-    transition: 1s;
-    transform-style: preserve-3d;
+/*MENU RESULTADOS*/
+.menuResultados{ 
+height:auto;
+overflow: hidden;}  
+.ca-menu{
+    padding:0;
+    margin:20px auto;
+    width:100%;
+}
+.ca-menu li{
+    width: 31.3%;
+    height: 140px;
+    overflow: hidden;
+    position: relative;
+    float:left;
+    background: #fff;
+    -webkit-box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    -moz-box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    margin-right: 2%;
+    -webkit-transition: all 300ms linear;
+    -moz-transition: all 300ms linear;
+    -o-transition: all 300ms linear;
+    -ms-transition: all 300ms linear;
+    transition: all 300ms linear;
+}
+.ca-menu li:last-child{
+    margin-right: 0px;
+}
+.ca-menu li a{
+    text-align: left;
+    width: 100%;
+    height: 100%;
+    display: block;
+    color: #333;
+    position: relative;
+}
+.ca-menu li a.active .ca-icon, .ca-menu li a.active .ca-main, .ca-menu li a.active .ca-sub{
+    color:#582B6A;
+    text-shadow: none;
 }
 
-.frontside .card,
-.backside .card {
-    min-height: 312px;
+
+
+.ca-icon{
+    font-family: 'WebSymbolsRegular', cursive;
+    font-size: 50px;
+    color: #444;
+    text-shadow: 0px 0px 1px #333;
+    line-height: 80px;
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    left: 0px;
+    top: 0px;
+    text-align: center;
+    -webkit-transition: all 400ms linear;
+    -moz-transition: all 400ms linear;
+    -o-transition: all 400ms linear;
+    -ms-transition: all 400ms linear;
+    transition: all 400ms linear;
+}
+.ca-content{
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 50%;
+    top: 50%;
+}
+.ca-main{
+    font-size: 14px;
+    line-height: 16px;
+    opacity: 0.8;
+    margin:0;
+    color: #000;
+    text-align: center;
+    -webkit-transition: all 200ms linear;
+    -moz-transition: all 200ms linear;
+    -o-transition: all 200ms linear;
+    -ms-transition: all 200ms linear;
+    transition: all 200ms linear;
+}
+.ca-sub{
+    text-align:center;
+    font-size: 14px;
+    color: #444;
+    line-height: 20px;
+    opacity: 0.8;
+    margin: 5px 0 0;
+    -webkit-transition: all 200ms linear;
+    -moz-transition: all 200ms linear;
+    -o-transition: all 200ms linear;
+    -ms-transition: all 200ms linear;
+    transition: all 200ms linear;
+}
+.ca-menu li:hover{
+    background-color: #582B6A;
+}
+.ca-menu li:hover .ca-icon{
+    color: #fff !important;
+    font-size: 60px;
+}
+.ca-menu li:hover .ca-main{
+    color: #fff !important;
+    -webkit-animation: moveFromLeftRotate 300ms ease;
+    -moz-animation: moveFromLeftRotate 300ms ease;
+    -ms-animation: moveFromLeftRotate 300ms ease;
+}
+.ca-menu li:hover .ca-sub{
+    color: #fff !important;
+    -webkit-animation: moveFromBottom 500ms ease;
+    -moz-animation: moveFromBottom 500ms ease;
+    -ms-animation: moveFromBottom 500ms ease;
+}
+@-webkit-keyframes moveFromLeftRotate{
+    from {
+        -webkit-transform: translateX(-100%) rotate(-90deg);
+    }
+    to {
+        -webkit-transform: translateX(0%) rotate(0deg);
+    }
+}
+@-moz-keyframes moveFromLeftRotate{
+    from {
+        -moz-transform: translateX(-100%) rotate(-90deg);
+    }
+    to {
+        -moz-transform: translateX(0%) rotate(0deg);
+    }
+}
+@-ms-keyframes moveFromLeftRotate{
+    from {
+        -ms-transform: translateX(-100%) rotate(-90deg);
+    }
+    to {
+        -ms-transform: translateX(0%) rotate(0deg);
+    }
 }
 
-.backside .card a {
+@-webkit-keyframes moveFromBottom {
+    from {
+        -webkit-transform: translateY(100%);
+    }
+    to {
+        -webkit-transform: translateY(0%);
+    }
+}
+@-moz-keyframes moveFromBottom {
+    from {
+        -moz-transform: translateY(100%);
+    }
+    to {
+        -moz-transform: translateY(0%);
+    }
+}
+@-ms-keyframes moveFromBottom {
+    from {
+        -ms-transform: translateY(100%);
+    }
+    to {
+        -ms-transform: translateY(0%);
+    }
+}
+/* FIN MENU RESULTADOS*/
+
+.despliegue{
+    -webkit-box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    -moz-box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    padding: 0;
+    margin: 20px 15px;
+    
+}
+.descArea{
+padding-left:15px;
+padding-right: 15px;
+height: auto;
+overflow: hidden;
+}
+.descArea  h3{
+    margin: 0;
+}
+.descArea p{
+    font-size: 14px;
+line-height: 18px;
+    color: #444;
+
+}
+.descCarreras{
+    padding-left:15px;
+padding-right: 15px;
+    padding-bottom: 15px;
+    
+}
+.descCarreras ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.descCarreras ul li{}
+.descCarreras ul li a{}
+.descCarreras ul li a:hover{}
+
+.dvlink{
+    height: auto;
+    overflow: hidden;
+}
+.dvlink > a{
+    font-family: 'open_sansbold';
+    color: #555;
     font-size: 18px;
-    color: #007b5e !important;
+    display: block;
+    width:45%;
+    float: left;
+    padding:15px 2.5%;
+    background-color: #fff;
+
+    text-decoration: none;
+    border-bottom: 2px solid #fff;
 }
 
-.frontside .card .card-title,
-.backside .card .card-title {
-    color: #007b5e !important;
+.dvlink > a:first-child{
+    
+}
+.dvlink > a.active{
+    color:#582B6A;
+    border-bottom: 2px solid #fff;
+    background-color: #fff;
+}
+.listCarreras{
+    margin-bottom: 15px;
+    height: auto;
+    overflow: hidden;
+}
+.listCarreras h3{
+    font-family: 'open_sansbold';
+    font-size:14px;
+    color: #155228;
+    margin: 0;
+    padding: 15px 25px;
+    border-bottom: 1px solid #444;
+    background-image: url('../images/arr-right.jpg');
+    background-repeat: no-repeat;
+    background-position: left 15px;
+}
+.listCarreras h3.active{
+    color: #269046;
+    border-bottom: 1px solid #582B6A;
+    background-image: url('../images/arr-down.jpg');
+}
+.listCarreras > div{
+    font-size: 14px;
+line-height: 18px;color: #444;
+
+}
+listCarreras p{}
+.dvlink > a:last-child{
+
+}
+.separaLateral{
+    width: 2px;
+    height: 20px;
+    float: left;
+    background-color: #f6f6f6;
+    margin-top: 15px;
 }
 
-.frontside .card .card-body img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-}
-.btn-default2{
-    background-color:#f19900;
-    border-color: #f19900;
-}
-    </style>
+
+
+
+
+
+</style>
+
   </head>
 
   <body id="page-top">
@@ -196,146 +1033,82 @@ section .section-title {
 
     </nav>
 
-    <div id="wrapper">
+    
 
-      <!-- Sidebar -->
-      <!--<ul class="sidebar navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="index.html">
-            <i class="fas fa-fw fa-tachometer-alt"></i>
-            <span>Dashboard</span>
-          </a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <i class="fas fa-fw fa-folder"></i>
-            <span>Pages</span>
-          </a>
-          <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-            <h6 class="dropdown-header">Login Screens:</h6>
-            <a class="dropdown-item" href="login.html">Login</a>
-            <a class="dropdown-item" href="register.html">Register</a>
-            <a class="dropdown-item" href="forgot-password.html">Forgot Password</a>
-            <div class="dropdown-divider"></div>
-            <h6 class="dropdown-header">Other Pages:</h6>
-            <a class="dropdown-item" href="404.html">404 Page</a>
-            <a class="dropdown-item" href="blank.html">Blank Page</a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="charts.html">
-            <i class="fas fa-fw fa-chart-area"></i>
-            <span>Charts</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="tables.html">
-            <i class="fas fa-fw fa-table"></i>
-            <span>Tables</span></a>
-        </li>
-      </ul>-->
-
-      <div class="container">
-        <h1 class="my-4">Cuestionario
-        
-      </h1>
-      <p>Responde las siguientes preguntas</p>
-
-
-    <div class="container">
-<div class="form-group" name="uno" id="pre_test">
+  <section class="contPreguntas w">
+            <div id="UpdatePanel1">
+                    <div class="navegadores">
+                        <div class="arrowText arrowLeft">                            
+                            <a id="btnAnterior" class="aspNetDisabled">Anterior</a>
+                        </div>
+                        <div id="Panel3">
+    <div class="statusProcess"><div class="barra"></div><div class="puntero"><span class="active">1</span></div><div class="puntero"><span>2</span></div><div class="puntero"><span>3</span></div><div class="puntero"><span>4</span></div><div class="puntero"><span>5</span></div><div class="puntero"><span>6</span></div><div class="puntero"><span>7</span></div><div class="puntero"><span>8</span></div><div class="puntero"><span>9</span></div><div class="puntero"><span>10</span></div></div>
+</div>
                         
-                        <ul class="list-group" id="i1">
-                            <li class="list-group-item">
-                                <p class="text-primary"> ¿Cómo de difícil crees que será buscar información para esta tarea utilizando un motor de búsqueda? </p>
-                                <input hidden="" value="¿Cómo de difícil crees que será buscar información para esta tarea utilizando un motor de búsqueda?" id="p1">
-                                <input type="radio" name="¿Cómo de difícil crees que será buscar información para esta tarea utilizando un motor de búsqueda?" value="1"> <label> Nada </label>
-                                <input type="radio" name="¿Cómo de difícil crees que será buscar información para esta tarea utilizando un motor de búsqueda?" value="2"> <label> Algo </label>
-                                <input type="radio" name="¿Cómo de difícil crees que será buscar información para esta tarea utilizando un motor de búsqueda?" value="3"> <label> Poco </label>
-                                <input type="radio" name="¿Cómo de difícil crees que será buscar información para esta tarea utilizando un motor de búsqueda?" value="4"> <label> Moderado </label>
-                                <input type="radio" name="¿Cómo de difícil crees que será buscar información para esta tarea utilizando un motor de búsqueda?" value="5"> <label> Bastante </label>
-                            </li>
-                        </ul>
-                        
-                        <ul class="list-group" id="i2">
-                            <li class="list-group-item">
-                                <p class="text-primary"> ¿Cómo de difícil crees que será decidir si la información que el motor de búsqueda encuentra es útil para completar el desafío? </p>
-                                <input hidden="" value="¿Cómo de difícil crees que será decidir si la información que el motor de búsqueda encuentra es útil para completar el desafío?" id="p2">
-                                <input type="radio" name="¿Cómo de difícil crees que será decidir si la información que el motor de búsqueda encuentra es útil para completar el desafío?" value="1"> <label> Nada </label>
-                                <input type="radio" name="¿Cómo de difícil crees que será decidir si la información que el motor de búsqueda encuentra es útil para completar el desafío?" value="2"> <label> Algo </label>
-                                <input type="radio" name="¿Cómo de difícil crees que será decidir si la información que el motor de búsqueda encuentra es útil para completar el desafío?" value="3"> <label> Poco </label>
-                                <input type="radio" name="¿Cómo de difícil crees que será decidir si la información que el motor de búsqueda encuentra es útil para completar el desafío?" value="4"> <label> Moderado </label>
-                                <input type="radio" name="¿Cómo de difícil crees que será decidir si la información que el motor de búsqueda encuentra es útil para completar el desafío?" value="5"> <label> Bastante </label>
-                            </li>
-                        </ul>
-                        
-                        <ul class="list-group" id="i3">
-                            <li class="list-group-item">
-                                <p class="text-primary"> ¿Cómo de difícil crees que será determinar cuándo tienes suficiente información para finalizar el desafío? </p>
-                                <input hidden="" value="¿Cómo de difícil crees que será determinar cuándo tienes suficiente información para finalizar el desafío?" id="p3">
-                                <input type="radio" name="¿Cómo de difícil crees que será determinar cuándo tienes suficiente información para finalizar el desafío?" value="1"> <label> Nada </label>
-                                <input type="radio" name="¿Cómo de difícil crees que será determinar cuándo tienes suficiente información para finalizar el desafío?" value="2"> <label> Algo </label>
-                                <input type="radio" name="¿Cómo de difícil crees que será determinar cuándo tienes suficiente información para finalizar el desafío?" value="3"> <label> Poco </label>
-                                <input type="radio" name="¿Cómo de difícil crees que será determinar cuándo tienes suficiente información para finalizar el desafío?" value="4"> <label> Moderado </label>
-                                <input type="radio" name="¿Cómo de difícil crees que será determinar cuándo tienes suficiente información para finalizar el desafío?" value="5"> <label> Bastante </label>
-                            </li>
-                        </ul>
-                        
-                        <ul class="list-group" id="i4">
-                            <li class="list-group-item">
-                                <p class="text-primary"> ¿Cómo de difícil crees que será entender la información que el motor de búsqueda encuentre? </p>
-                                <input hidden="" value="¿Cómo de difícil crees que será entender la información que el motor de búsqueda encuentre?" id="p4">
-                                <input type="radio" name="¿Cómo de difícil crees que será entender la información que el motor de búsqueda encuentre?" value="1"> <label> Nada </label>
-                                <input type="radio" name="¿Cómo de difícil crees que será entender la información que el motor de búsqueda encuentre?" value="2"> <label> Algo </label>
-                                <input type="radio" name="¿Cómo de difícil crees que será entender la información que el motor de búsqueda encuentre?" value="3"> <label> Poco </label>
-                                <input type="radio" name="¿Cómo de difícil crees que será entender la información que el motor de búsqueda encuentre?" value="4"> <label> Moderado </label>
-                                <input type="radio" name="¿Cómo de difícil crees que será entender la información que el motor de búsqueda encuentre?" value="5"> <label> Bastante </label>
-                            </li>
-                        </ul>
-                        
-                        <ul class="list-group" id="i5">
-                            <li class="list-group-item">
-                                <p class="text-primary"> ¿Cómo de difícil crees que será integrar la información que el motor de búsqueda encuentre? </p>
-                                <input hidden="" value="¿Cómo de difícil crees que será integrar la información que el motor de búsqueda encuentre?" id="p5">
-                                <input type="radio" name="¿Cómo de difícil crees que será integrar la información que el motor de búsqueda encuentre?" value="1"> <label> Nada </label>
-                                <input type="radio" name="¿Cómo de difícil crees que será integrar la información que el motor de búsqueda encuentre?" value="2"> <label> Algo </label>
-                                <input type="radio" name="¿Cómo de difícil crees que será integrar la información que el motor de búsqueda encuentre?" value="3"> <label> Poco </label>
-                                <input type="radio" name="¿Cómo de difícil crees que será integrar la información que el motor de búsqueda encuentre?" value="4"> <label> Moderado </label>
-                                <input type="radio" name="¿Cómo de difícil crees que será integrar la información que el motor de búsqueda encuentre?" value="5"> <label> Bastante </label>
-                            </li>
-                        </ul>
-                        
-                        <ul class="list-group" id="i6">
-                            <li class="list-group-item">
-                                <p class="text-primary"> ¿Cómo de familiar o conocido es para ti el desafío? </p>
-                                <input hidden="" value="¿Cómo de familiar o conocido es para ti el desafío?" id="p6">
-                                <input type="radio" name="¿Cómo de familiar o conocido es para ti el desafío?" value="1"> <label> Nada </label>
-                                <input type="radio" name="¿Cómo de familiar o conocido es para ti el desafío?" value="2"> <label> Algo </label>
-                                <input type="radio" name="¿Cómo de familiar o conocido es para ti el desafío?" value="3"> <label> Poco </label>
-                                <input type="radio" name="¿Cómo de familiar o conocido es para ti el desafío?" value="4"> <label> Moderado </label>
-                                <input type="radio" name="¿Cómo de familiar o conocido es para ti el desafío?" value="5"> <label> Bastante </label>
-                            </li>
-                        </ul>
-                        
-                        <ul class="list-group" id="i7">
-                            <li class="list-group-item">
-                                <p class="text-primary"> ¿Cómo de seguro te sientes de crear una solución creativa para el desafío? </p>
-                                <input hidden="" value="¿Cómo de seguro te sientes de crear una solución creativa para el desafío?" id="p7">
-                                <input type="radio" name="¿Cómo de seguro te sientes de crear una solución creativa para el desafío?" value="1"> <label> Nada </label>
-                                <input type="radio" name="¿Cómo de seguro te sientes de crear una solución creativa para el desafío?" value="2"> <label> Algo </label>
-                                <input type="radio" name="¿Cómo de seguro te sientes de crear una solución creativa para el desafío?" value="3"> <label> Poco </label>
-                                <input type="radio" name="¿Cómo de seguro te sientes de crear una solución creativa para el desafío?" value="4"> <label> Moderado </label>
-                                <input type="radio" name="¿Cómo de seguro te sientes de crear una solución creativa para el desafío?" value="5"> <label> Bastante </label>
-                            </li>
-                        </ul>
-                        
+                        <div id="btnSiguienteDiv" class="arrowText arrowRight"> 
+                            <a id="btnSiguiente" href="javascript:__doPostBack('btnSiguiente','')">Siguiente</a>
+                        </div>
                     </div>
-            <button class="btn btn-default2 btn-success pull-right">enviar</button>
+                    
+                    <div class="main-content">
+                        <div class="container-fluid padded">
+
+                            <div class="row-fluid">
+                                <div class="span12">
+                                    <div class="introFormulario">
+                                        
+                                        <h2>
+                                            <span id="lblNomEvento">Ruta Vocacional</span>
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row-fluid">
+                                <div class="span12">
+                                    <div class="box">
+
+                                        <div id="Panel1" autowidth="True" header="True">
+    
+                                            <div id="PanelPreguntas" padding="15" bodyborder="False">
+        <div id="DivPregunta_1" class="question"><p style="height: 40px; margin-bottom: 5px;margin-top: 5px;">1 - Me gusta entregar los trabajos y tareas en las fechas y plazos exigidos</p><div style="float: left;"><label><font size="2">No me representa</font></label></div><div style="float: right;"><label><font size="2">Si me representa</font></label></div><br><br><div class="opciones"><ul><li><label for="rbtn_1_1">1</label><input id="rbtn_1_1" type="radio" name="1" value="rbtn_1_1" onclick="javascript:setTimeout('__doPostBack(\'rbtn_1_1\',\'\')', 0)"><div class="check"></div><div class="inside"></div></li><li><label for="rbtn_1_2">2</label><input id="rbtn_1_2" type="radio" name="1" value="rbtn_1_2" onclick="javascript:setTimeout('__doPostBack(\'rbtn_1_2\',\'\')', 0)"><div class="check"></div><div class="inside"></div></li><li><label for="rbtn_1_3">3</label><input id="rbtn_1_3" type="radio" name="1" value="rbtn_1_3" onclick="javascript:setTimeout('__doPostBack(\'rbtn_1_3\',\'\')', 0)"><div class="check"></div><div class="inside"></div></li><li><label for="rbtn_1_4">4</label><input id="rbtn_1_4" type="radio" name="1" value="rbtn_1_4" onclick="javascript:setTimeout('__doPostBack(\'rbtn_1_4\',\'\')', 0)"><div class="check"></div><div class="inside"></div></li><li><label for="rbtn_1_5">5</label><input id="rbtn_1_5" type="radio" name="1" value="rbtn_1_5" checked="checked"><div class="check"></div><div class="inside"></div></li><li><label for="rbtn_1_6">6</label><input id="rbtn_1_6" type="radio" name="1" value="rbtn_1_6" onclick="javascript:setTimeout('__doPostBack(\'rbtn_1_6\',\'\')', 0)"><div class="check"></div><div class="inside"></div></li><li><label for="rbtn_1_7">7</label><input id="rbtn_1_7" type="radio" name="1" value="rbtn_1_7" onclick="javascript:setTimeout('__doPostBack(\'rbtn_1_7\',\'\')', 0)"><div class="check"></div><div class="inside"></div></li><li><label for="rbtn_1_8">8</label><input id="rbtn_1_8" type="radio" name="1" value="rbtn_1_8" onclick="javascript:setTimeout('__doPostBack(\'rbtn_1_8\',\'\')', 0)"><div class="check"></div><div class="inside"></div></li></ul></div></div><div id="DivPregunta_2" class="question"><p style="height: 40px; margin-bottom: 5px;margin-top: 5px;">2 - Me gusta expresarme de manera escrita</p><div style="float: left;"><label><font size="2">No me representa</font></label></div><div style="float: right;"><label><font size="2">Si me representa</font></label></div><br><br><div class="opciones"><ul><li><label for="rbtn_2_1">1</label><input id="rbtn_2_1" type="radio" name="2" value="rbtn_2_1" onclick="javascript:setTimeout('__doPostBack(\'rbtn_2_1\',\'\')', 0)"><div class="check"></div><div class="inside"></div></li><li><label for="rbtn_2_2">2</label><input id="rbtn_2_2" type="radio" name="2" value="rbtn_2_2" onclick="javascript:setTimeout('__doPostBack(\'rbtn_2_2\',\'\')', 0)"><div class="check"></div><div class="inside"></div></li><li><label for="rbtn_2_3">3</label><input id="rbtn_2_3" type="radio" name="2" value="rbtn_2_3" checked="checked"><div class="check"></div><div class="inside"></div></li><li><label for="rbtn_2_4">4</label><input id="rbtn_2_4" type="radio" name="2" value="rbtn_2_4" onclick="javascript:setTimeout('__doPostBack(\'rbtn_2_4\',\'\')', 0)"><div class="check"></div><div class="inside"></div></li><li><label for="rbtn_2_5">5</label><input id="rbtn_2_5" type="radio" name="2" value="rbtn_2_5" onclick="javascript:setTimeout('__doPostBack(\'rbtn_2_5\',\'\')', 0)"><div class="check"></div><div class="inside"></div></li><li><label for="rbtn_2_6">6</label><input id="rbtn_2_6" type="radio" name="2" value="rbtn_2_6" onclick="javascript:setTimeout('__doPostBack(\'rbtn_2_6\',\'\')', 0)"><div class="check"></div><div class="inside"></div></li><li><label for="rbtn_2_7">7</label><input id="rbtn_2_7" type="radio" name="2" value="rbtn_2_7" onclick="javascript:setTimeout('__doPostBack(\'rbtn_2_7\',\'\')', 0)"><div class="check"></div><div class="inside"></div></li><li><label for="rbtn_2_8">8</label><input id="rbtn_2_8" type="radio" name="2" value="rbtn_2_8" onclick="javascript:setTimeout('__doPostBack(\'rbtn_2_8\',\'\')', 0)"><div class="check"></div><div class="inside"></div></li></ul></div></div><div id="DivPregunta_3" class="question"><p style="height: 40px; margin-bottom: 5px;margin-top: 5px;">3 - Me gusta relacionarme y conversar con otras personas</p><div style="float: left;"><label><font size="2">No me representa</font></label></div><div style="float: right;"><label><font size="2">Si me representa</font></label></div><br><br><div class="opciones"><ul><li><label for="rbtn_3_1">1</label><input id="rbtn_3_1" type="radio" name="3" value="rbtn_3_1" onclick="javascript:setTimeout('__doPostBack(\'rbtn_3_1\',\'\')', 0)"><div class="check"></div><div class="inside"></div></li><li><label for="rbtn_3_2">2</label><input id="rbtn_3_2" type="radio" name="3" value="rbtn_3_2" onclick="javascript:setTimeout('__doPostBack(\'rbtn_3_2\',\'\')', 0)"><div class="check"></div><div class="inside"></div></li><li><label for="rbtn_3_3">3</label><input id="rbtn_3_3" type="radio" name="3" value="rbtn_3_3" onclick="javascript:setTimeout('__doPostBack(\'rbtn_3_3\',\'\')', 0)"><div class="check"></div><div class="inside"></div></li><li><label for="rbtn_3_4">4</label><input id="rbtn_3_4" type="radio" name="3" value="rbtn_3_4" onclick="javascript:setTimeout('__doPostBack(\'rbtn_3_4\',\'\')', 0)"><div class="check"></div><div class="inside"></div></li><li><label for="rbtn_3_5">5</label><input id="rbtn_3_5" type="radio" name="3" value="rbtn_3_5" checked="checked"><div class="check"></div><div class="inside"></div></li><li><label for="rbtn_3_6">6</label><input id="rbtn_3_6" type="radio" name="3" value="rbtn_3_6" onclick="javascript:setTimeout('__doPostBack(\'rbtn_3_6\',\'\')', 0)"><div class="check"></div><div class="inside"></div></li><li><label for="rbtn_3_7">7</label><input id="rbtn_3_7" type="radio" name="3" value="rbtn_3_7" onclick="javascript:setTimeout('__doPostBack(\'rbtn_3_7\',\'\')', 0)"><div class="check"></div><div class="inside"></div></li><li><label for="rbtn_3_8">8</label><input id="rbtn_3_8" type="radio" name="3" value="rbtn_3_8" onclick="javascript:setTimeout('__doPostBack(\'rbtn_3_8\',\'\')', 0)"><div class="check"></div><div class="inside"></div></li></ul></div></div><div id="DivPregunta_4" class="question"><p style="height: 40px; margin-bottom: 5px;margin-top: 5px;">4 - Prefiero encontrar una solución efectiva a los problemas en lugar de pensarlo demasiado.</p><div style="float: left;"><label><font size="2">No me representa</font></label></div><div style="float: right;"><label><font size="2">Si me representa</font></label></div><br><br><div class="opciones"><ul><li><label for="rbtn_4_1">1</label><input id="rbtn_4_1" type="radio" name="4" value="rbtn_4_1" onclick="javascript:setTimeout('__doPostBack(\'rbtn_4_1\',\'\')', 0)"><div class="check"></div><div class="inside"></div></li><li><label for="rbtn_4_2">2</label><input id="rbtn_4_2" type="radio" name="4" value="rbtn_4_2" onclick="javascript:setTimeout('__doPostBack(\'rbtn_4_2\',\'\')', 0)"><div class="check"></div><div class="inside"></div></li><li><label for="rbtn_4_3">3</label><input id="rbtn_4_3" type="radio" name="4" value="rbtn_4_3" onclick="javascript:setTimeout('__doPostBack(\'rbtn_4_3\',\'\')', 0)"><div class="check"></div><div class="inside"></div></li><li><label for="rbtn_4_4">4</label><input id="rbtn_4_4" type="radio" name="4" value="rbtn_4_4" checked="checked"><div class="check"></div><div class="inside"></div></li><li><label for="rbtn_4_5">5</label><input id="rbtn_4_5" type="radio" name="4" value="rbtn_4_5" onclick="javascript:setTimeout('__doPostBack(\'rbtn_4_5\',\'\')', 0)"><div class="check"></div><div class="inside"></div></li><li><label for="rbtn_4_6">6</label><input id="rbtn_4_6" type="radio" name="4" value="rbtn_4_6" onclick="javascript:setTimeout('__doPostBack(\'rbtn_4_6\',\'\')', 0)"><div class="check"></div><div class="inside"></div></li><li><label for="rbtn_4_7">7</label><input id="rbtn_4_7" type="radio" name="4" value="rbtn_4_7" onclick="javascript:setTimeout('__doPostBack(\'rbtn_4_7\',\'\')', 0)"><div class="check"></div><div class="inside"></div></li><li><label for="rbtn_4_8">8</label><input id="rbtn_4_8" type="radio" name="4" value="rbtn_4_8" onclick="javascript:setTimeout('__doPostBack(\'rbtn_4_8\',\'\')', 0)"><div class="check"></div><div class="inside"></div></li></ul></div></div><div id="DivPregunta_5" class="question"><p style="height: 40px; margin-bottom: 5px;margin-top: 5px;">5 - Prefiero realizar mis tareas con exactitud y precisión</p><div style="float: left;"><label><font size="2">No me representa</font></label></div><div style="float: right;"><label><font size="2">Si me representa</font></label></div><br><br><div class="opciones"><ul><li><label for="rbtn_5_1">1</label><input id="rbtn_5_1" type="radio" name="5" value="rbtn_5_1" onclick="javascript:setTimeout('__doPostBack(\'rbtn_5_1\',\'\')', 0)"><div class="check"></div><div class="inside"></div></li><li><label for="rbtn_5_2">2</label><input id="rbtn_5_2" type="radio" name="5" value="rbtn_5_2" onclick="javascript:setTimeout('__doPostBack(\'rbtn_5_2\',\'\')', 0)"><div class="check"></div><div class="inside"></div></li><li><label for="rbtn_5_3">3</label><input id="rbtn_5_3" type="radio" name="5" value="rbtn_5_3" checked="checked"><div class="check"></div><div class="inside"></div></li><li><label for="rbtn_5_4">4</label><input id="rbtn_5_4" type="radio" name="5" value="rbtn_5_4" onclick="javascript:setTimeout('__doPostBack(\'rbtn_5_4\',\'\')', 0)"><div class="check"></div><div class="inside"></div></li><li><label for="rbtn_5_5">5</label><input id="rbtn_5_5" type="radio" name="5" value="rbtn_5_5" onclick="javascript:setTimeout('__doPostBack(\'rbtn_5_5\',\'\')', 0)"><div class="check"></div><div class="inside"></div></li><li><label for="rbtn_5_6">6</label><input id="rbtn_5_6" type="radio" name="5" value="rbtn_5_6" onclick="javascript:setTimeout('__doPostBack(\'rbtn_5_6\',\'\')', 0)"><div class="check"></div><div class="inside"></div></li><li><label for="rbtn_5_7">7</label><input id="rbtn_5_7" type="radio" name="5" value="rbtn_5_7" onclick="javascript:setTimeout('__doPostBack(\'rbtn_5_7\',\'\')', 0)"><div class="check"></div><div class="inside"></div></li><li><label for="rbtn_5_8">8</label><input id="rbtn_5_8" type="radio" name="5" value="rbtn_5_8" onclick="javascript:setTimeout('__doPostBack(\'rbtn_5_8\',\'\')', 0)"><div class="check"></div><div class="inside"></div></li></ul></div></div>
+    </div>
+                                        
+</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row-fluid">
+                                <div class="span12">
+                                    <div class="box" style="border: none !important;">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="navegadores">
+                        <div class="arrowText arrowLeft">
+                            
+                            <a id="btnAnterior2" class="aspNetDisabled">Anterior</a>
+                        </div>
+                        <div id="Panel2">
+    
+                            
+                            <div class="statusProcess"><div class="barra"></div><div class="puntero"><span>1</span></div><div class="puntero"><span class="active">2</span></div><div class="puntero"><span>3</span></div><div class="puntero"><span>4</span></div><div class="puntero"><span>5</span></div><div class="puntero"><span>6</span></div><div class="puntero"><span>7</span></div><div class="puntero"><span>8</span></div><div class="puntero"><span>9</span></div><div class="puntero"><span>10</span></div></div><div class="statusProcess"><div class="barra"></div><div class="puntero"><span class="active">1</span></div><div class="puntero"><span>2</span></div><div class="puntero"><span>3</span></div><div class="puntero"><span>4</span></div><div class="puntero"><span>5</span></div><div class="puntero"><span>6</span></div><div class="puntero"><span>7</span></div><div class="puntero"><span>8</span></div><div class="puntero"><span>9</span></div><div class="puntero"><span>10</span></div></div>
+</div>
+                        
+                        <div id="btnSiguienteDiv2" class="arrowText arrowRight">
+                            
+                            <a id="btnSiguiente2" href="javascript:__doPostBack('btnSiguiente2','')">Siguiente</a>
+                        </div>
+                    </div>
+                    
                 </div>
-            </div>   
-
-
-</div>
-</div>
+            
+        </section>
     <!-- /#wrapper -->
 
     <!-- Scroll to Top Button-->
