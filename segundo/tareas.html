@@ -26,9 +26,9 @@
       @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 body,
 html {
-  padding: 0 10px;
+  padding: 0 0px;
   margin: 0;
-  background: #ffff;
+  background: #111;
   color: #ecf0f1;
   font-family: 'Open Sans', sans-serif;
   min-height: 100vh;
@@ -36,18 +36,21 @@ html {
   flex-direction: row;
   align-items: center;
   width: 100%;
+   overflow: auto;
 }
 * {
   box-sizing: border-box;
 }
 h1,
 p {
-  text-align: center;
+  text-align: left;
+  color:#fff;
+  font-family: 'Open Sans'
 }
 p {
   width: 100%;
-  max-width: 500px;
-  margin: auto;
+  margin-top:1%;
+  margin-left: 1%;
 }
 a:link,
 a:hover,
@@ -63,11 +66,21 @@ a:hover {
 }
 .contain {
   width: 100%;
+margin-top: 90PX;
 }
 .row {
-  overflow: scroll;
+
+  overflow: auto;
   width: 100%;
 }
+.row::-webkit-scrollbar{
+	width: 1px;
+}
+.row::-webkit-scrollbar-thumb{
+	background: #ff9d00;
+	border-radius: 1px;
+}
+
 .row__inner {
   transition: 450ms -webkit-transform;
   transition: 450ms transform;
@@ -75,7 +88,10 @@ a:hover {
   font-size: 0;
   white-space: nowrap;
   margin: 70.3125px 0;
+  padding-top: 10PX;
   padding-bottom: 10px;
+
+  width: 100%;
 }
 .tile {
   position: relative;
@@ -166,9 +182,9 @@ a:hover {
     </style>
   </head>
 
-  <body id="page-top">
+  <body  id="page-top">
 
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <nav style="background-color: #fff" class="navbar navbar-expand-lg navbar-light fixed-top">
 
        <a class="navbar-brand" href="..\inicio\inicio.html">Inicio</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -206,12 +222,17 @@ a:hover {
     </nav>
 
 
+
+
 <div class="contain">
 
-
+	<p>POR COMENZAR </p>
 
   <div class="row">
-    <div class="row__inner">
+
+    
+
+    <div  class="row__inner">
 
       <div class="tile">
         <div class="tile__media">
@@ -245,10 +266,9 @@ a:hover {
           </div>
         </div>
       </div>
-
       <div class="tile">
         <div class="tile__media">
-          <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-4.jpg" alt=""  />
+          <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-3.jpg" alt=""  />
         </div>
         <div class="tile__details">
           <div class="tile__title">
@@ -256,10 +276,9 @@ a:hover {
           </div>
         </div>
       </div>
-
       <div class="tile">
         <div class="tile__media">
-          <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-5.jpg" alt=""  />
+          <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-3.jpg" alt=""  />
         </div>
         <div class="tile__details">
           <div class="tile__title">
@@ -267,165 +286,146 @@ a:hover {
           </div>
         </div>
       </div>
-
-      <div class="tile">
-        <div class="tile__media">
-          <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-6.jpg" alt=""  />
-        </div>
-        <div class="tile__details">
-          <div class="tile__title">
-            Top Gear
-          </div>
-        </div>
-      </div>
-
-      <div class="tile">
-        <div class="tile__media">
-          <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-7.jpg" alt=""  />
-        </div>
-        <div class="tile__details">
-          <div class="tile__title">
-            Top Gear
-          </div>
-        </div>
-      </div>
-
-      <div class="tile">
-        <div class="tile__media">
-          <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-8.jpg" alt=""  />
-        </div>
-        <div class="tile__details">
-          <div class="tile__title">
-            Top Gear
-          </div>
-        </div>
-      </div>
-
-      <div class="tile">
-        <div class="tile__media">
-          <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-9.jpg" alt=""  />
-        </div>
-        <div class="tile__details">
-          <div class="tile__title">
-            Top Gear
-          </div>
-        </div>
-      </div>
-
-      <div class="tile">
-        <div class="tile__media">
-          <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-10.jpg" alt=""  />
-        </div>
-        <div class="tile__details">
-          <div class="tile__title">
-            Top Gear
-          </div>
-        </div>
-      </div>
-
-      <div class="tile">
-        <div class="tile__media">
-          <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-11.jpg" alt=""  />
-        </div>
-        <div class="tile__details">
-          <div class="tile__title">
-            Top Gear
-          </div>
-        </div>
-      </div>
-
-      <div class="tile">
-        <div class="tile__media">
-          <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-12.jpg" alt=""  />
-        </div>
-        <div class="tile__details">
-          <div class="tile__title">
-            Top Gear
-          </div>
-        </div>
-      </div>
-
-      <div class="tile">
-        <div class="tile__media">
-          <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-13.jpg" alt=""  />
-        </div>
-        <div class="tile__details">
-          <div class="tile__title">
-            Top Gear
-          </div>
-        </div>
-      </div>
-
-      <div class="tile">
-        <div class="tile__media">
-          <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-14.jpg" alt=""  />
-        </div>
-        <div class="tile__details">
-          <div class="tile__title">
-            Top Gear
-          </div>
-        </div>
-      </div>
-
-      <div class="tile">
-        <div class="tile__media">
-          <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-15.jpg" alt=""  />
-        </div>
-        <div class="tile__details">
-          <div class="tile__title">
-            Top Gear
-          </div>
-        </div>
-      </div>
-
-      <div class="tile">
-        <div class="tile__media">
-          <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-16.jpg" alt=""  />
-        </div>
-        <div class="tile__details">
-          <div class="tile__title">
-            Top Gear
-          </div>
-        </div>
-      </div>
-
-      <div class="tile">
-        <div class="tile__media">
-          <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-17.jpg" alt=""  />
-        </div>
-        <div class="tile__details">
-          <div class="tile__title">
-            Top Gear
-          </div>
-        </div>
-      </div>
-
-      <div class="tile">
-        <div class="tile__media">
-          <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-18.jpg" alt=""  />
-        </div>
-        <div class="tile__details">
-          <div class="tile__title">
-            Top Gear
-          </div>
-        </div>
-      </div>
-
-      <div class="tile">
-        <div class="tile__media">
-          <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-19.jpg" alt=""  />
-        </div>
-        <div class="tile__details">
-          <div class="tile__title">
-            Top Gear
-          </div>
-        </div>
-      </div>
-
     </div>
   </div>
 
+<p>EN PROCESO</p>
+ <div class="row">
+    	
+ 
+<div  class="row__inner">
+
+      <div class="tile">
+        <div class="tile__media">
+          <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-1.jpg" alt=""  />
+        </div>
+        <div class="tile__details">
+          <div class="tile__title">
+            Top Gear
+          </div>
+        </div>
+      </div>
+
+      <div class="tile">
+        <div class="tile__media">
+          <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-2.jpg" alt=""  />
+        </div>
+        <div class="tile__details">
+          <div class="tile__title">
+            Top Gear
+          </div>
+        </div>
+      </div>
+
+      <div class="tile">
+        <div class="tile__media">
+          <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-3.jpg" alt=""  />
+        </div>
+        <div class="tile__details">
+          <div class="tile__title">
+            Top Gear
+          </div>
+        </div>
+      </div>
+      <div class="tile">
+        <div class="tile__media">
+          <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-3.jpg" alt=""  />
+        </div>
+        <div class="tile__details">
+          <div class="tile__title">
+            Top Gear
+          </div>
+        </div>
+      </div>
+      <div class="tile">
+        <div class="tile__media">
+          <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-3.jpg" alt=""  />
+        </div>
+        <div class="tile__details">
+          <div class="tile__title">
+            Top Gear
+          </div>
+        </div>
+      </div>
+    </div>
+
 </div>
+
+<p>FINALIZADO</p>
+ <div class="row">
+    	
+ 
+<div  class="row__inner">
+
+      <div class="tile">
+        <div class="tile__media">
+          <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-1.jpg" alt=""  />
+        </div>
+        <div class="tile__details">
+          <div class="tile__title">
+            Top Gear
+          </div>
+        </div>
+      </div>
+
+      <div class="tile">
+        <div class="tile__media">
+          <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-2.jpg" alt=""  />
+        </div>
+        <div class="tile__details">
+          <div class="tile__title">
+            Top Gear
+          </div>
+        </div>
+      </div>
+
+      <div class="tile">
+        <div class="tile__media">
+          <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-3.jpg" alt=""  />
+        </div>
+        <div class="tile__details">
+          <div class="tile__title">
+            Top Gear
+          </div>
+        </div>
+      </div>
+      <div class="tile">
+        <div class="tile__media">
+          <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-3.jpg" alt=""  />
+        </div>
+        <div class="tile__details">
+          <div class="tile__title">
+            Top Gear
+          </div>
+        </div>
+      </div>
+      <div class="tile">
+        <div class="tile__media">
+          <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-3.jpg" alt=""  />
+        </div>
+        <div class="tile__details">
+          <div class="tile__title">
+            Top Gear
+          </div>
+        </div>
+      </div>
+    </div>
+
+</div>
+
+</div>
+
+ 
+
+
+
+
+
+
+
+
+    
+
 
 
     <!-- Bootstrap core JavaScript-->
