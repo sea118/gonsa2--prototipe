@@ -1,0 +1,303 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head> 
+        <meta charset="utf-8"> 
+        <!-- This file has been downloaded from Bootsnipp.com. Enjoy! -->         
+        <title>Gradient Bootstrap Pricing Table - Bootsnipp.com</title>         
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet"> 
+        <style type="text/css">/*
+Author: Bootstrapthemes
+Author URI: http://bootstrapthemes.co
+*/
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+.p-top-100 {
+    padding: 100px 0;
+}
+
+.p-top-50 {
+    padding: 50px 0;
+}
+
+.m-top-40 {
+    margin-top: 40px;
+}
+
+/*=================================================
+Pricint fiv
+===================================================*/
+.bs-five-area {
+    width: 100%;
+    display: inline-block;
+    box-shadow: 0px 0px 6px 0px #ddd;
+    overflow: hidden;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+.bs-five-area.bs-radius {
+    border-radius: 30px;
+}
+
+.bs-five-area > div {
+    padding: 0;
+}
+
+.bs-five-area .bs-five {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    transition: all 0.4s;
+    padding: 20px 0px;
+}
+
+.bs-five-area .bs-five h6 {
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.bs-five-area .bs-five h1 {
+    font-size: 64px;
+    font-weight: 100;
+    line-height: 72px;
+}
+
+.bs-five-area .bs-five h1 sup {
+    font-size: 30px;
+    top: -30px;
+}
+
+.bs-five-area .bs-five ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.bs-five-area .bs-five ul li {
+    line-height: 45px;
+    border-bottom: 0px;
+}
+
+.bs-five-area .bs-five:hover {
+    background: #179880;
+    transition: all 0.4s;
+}
+
+.bs-five-area .bs-five.active {
+    background: #179880;
+    background: -webkit-linear-gradient(left, #179880 , #21A476);
+    background: -o-linear-gradient(right, #179880, #21A476);
+    background: -moz-linear-gradient(right, #179880, #21A476);
+    background: linear-gradient(to right, #179880 , #21A476);
+}
+
+.bs-five-area .bs-five .btn-success {
+    padding: 10px 50px;
+    display: inline-block;
+    border-radius: 30px;
+    background-color: #179880;
+    border-color: #21A476;
+}
+
+.bs-five-area .bs-five.active .btn.btn-success,
+.bs-five-area .bs-five:hover.bs-five .btn.btn-success {
+    background: #E0FFF6 ;
+    color: #444 ;
+}
+
+.bs-five-area .bs-five.active,
+.bs-five-area .bs-five.active ul li,
+.bs-five-area .bs-five:hover.bs-five,
+.bs-five-area .bs-five:hover.bs-five ul li {
+    color: #fff;
+}
+
+/*copyright
+==================*/
+.footer {
+    background-color: #333;
+}
+
+.copyright {
+    padding: 20px 10px;
+}
+
+.copyright p {
+    font-size: 12px;
+    color: #fff;
+}
+
+.copyright p i {
+    padding: 0px 5px;
+    color: red;
+}
+
+.copyright p a {
+    padding: 0px 5px;
+    color: yellow;
+}</style>         
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>         
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>         
+    </head>     
+    <body>
+        <nav class="navbar navbar-default" role="navigation"> 
+            <div class="container-fluid"> 
+                <div class="navbar-header"> 
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> 
+                        <span class="sr-only">Toggle navigation</span> 
+                        <span class="icon-bar"></span> 
+                        <span class="icon-bar"></span> 
+                        <span class="icon-bar"></span> 
+                    </button>                     
+                    <a class="navbar-brand" href="#">Brand</a> 
+                </div>                 
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> 
+                    <ul class="nav navbar-nav"> 
+                        <li class="active">
+                            <a href="#">Link</a>
+                        </li>                         
+                        <li>
+                            <a href="#">Link</a>
+                        </li>                         
+                        <li class="dropdown"> 
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a> 
+                            <ul class="dropdown-menu"> 
+                                <li>
+                                    <a href="#">Action</a>
+                                </li>                                 
+                                <li>
+                                    <a href="#">Another action</a>
+                                </li>                                 
+                                <li>
+                                    <a href="#">Something else here</a>
+                                </li>                                 
+                                <li class="divider"></li>                                 
+                                <li>
+                                    <a href="#">Separated link</a>
+                                </li>                                 
+                                <li class="divider"></li>                                 
+                                <li>
+                                    <a href="#">One more separated link</a>
+                                </li>                                 
+                            </ul>                             
+                        </li>                         
+                    </ul>                     
+                    <form class="navbar-form navbar-left" role="search"> 
+                        <div class="form-group"> 
+                            <input type="text" class="form-control" placeholder="Search"> 
+                        </div>                         
+                        <button type="submit" class="btn btn-default">Submit</button>                         
+                    </form>                     
+                    <ul class="nav navbar-nav navbar-right"> 
+                        <li>
+                            <a href="#">Link</a>
+                        </li>                         
+                        <li class="dropdown"> 
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a> 
+                            <ul class="dropdown-menu"> 
+                                <li>
+                                    <a href="#">Action</a>
+                                </li>                                 
+                                <li>
+                                    <a href="#">Another action</a>
+                                </li>                                 
+                                <li>
+                                    <a href="#">Something else here</a>
+                                </li>                                 
+                                <li class="divider"></li>                                 
+                                <li>
+                                    <a href="#">Separated link</a>
+                                </li>                                 
+                            </ul>                             
+                        </li>                         
+                    </ul>                     
+                </div>                 
+            </div>             
+        </nav>
+        <section>
+            <h1 style="font-size: 4rem; font-family: 'sans-serif'; color: #179880" lign="center">Categorias</h1> 
+            <section id="bs-pricing-five" class="bs-pricing-five p-top-50 bg-white"> 
+                <div class="container"> 
+                    <div class="row"> 
+                        <div class="bs-five-area bs-radius"> 
+                            <div class="col-md-3 no-padding"> 
+                                <div style="height: 429px" class="bs-five"> 
+                                    <h6 class="text-uppercase">MATEMATICA</h6> 
+                                    <!--<h1 class="bs-caption"><sup>$</sup>00</h1>-->                                     
+                                    <a href="tareas.html"> 
+                                        <img class="rounded-circle img-fluid d-block mx-auto" src="mate3.png" alt="">
+                                    </a>                                     
+                                    <p>Desafios de matematicos</p> 
+                                    <ul> 
+                                        <li>
+                                            <b>25 Desafios matematicos</b>
+                                        </li>                                         
+                                        <p>Estos desafios estan orientados a probar tu capacidadad en el manejo de ....</p> 
+                                    </ul>                                     
+                                    <a href="tareas.html" class="btn btn-success btn-round m-top-40">Comenzar</a> 
+                                </div>                                 
+                            </div>                             
+                            <div class="col-md-3 no-padding"> 
+                                <div style="height: 429px" class="bs-five "> 
+                                    <h6 class="text-uppercase">CIENCIA</h6> 
+                                    <a href="tareas.html"> 
+                                        <img class="rounded-circle img-fluid d-block mx-auto" src="ciencia.png" alt="">
+                                    </a>                                     
+                                    <!--<h1 class="bs-caption"><sup>$</sup>49</h1>-->                                     
+                                    <p>Desafios de ciencia</p> 
+                                    <ul> 
+                                        <li>
+                                            <b>60 Dessafios </b>
+                                        </li>                                         
+                                        <p>Estos desafios estan orientados a probar tu capacidadad en el manejo de ....</p> 
+                                    </ul>                                     
+                                    <a href="tareas.html" class="btn btn-success btn-round m-top-40">Comenzar</a> 
+                                </div>                                 
+                            </div>                             
+                            <div class="col-md-3 no-padding"> 
+                                <div style="height: 429px" class="bs-five"> 
+                                    <h6 class="text-uppercase">HISTORIA</h6> 
+                                    <a href="tareas.html"> 
+                                        <img class="rounded-circle img-fluid d-block mx-auto" src="historia.png" alt="">
+                                    </a>                                     
+                                    <!--<h1 class="bs-caption"><sup>$</sup>69</h1>-->                                     
+                                    <p>Desafios de historia</p> 
+                                    <ul> 
+                                        <li>
+                                            <b>60 desafios</b>
+                                        </li>                                         
+                                        <p>Estos desafios estan orientados a probar tu capacidadad en el manejo de ....</p> 
+                                    </ul>                                     
+                                    <a href="tareas.html" class="btn btn-success btn-round m-top-40">Comenzar</a> 
+                                </div>                                 
+                            </div>                             
+                            <div class="col-md-3 no-padding"> 
+                                <div style="height: 429px" class="bs-five"> 
+                                    <h6 class="text-uppercase">LENGUAJE</h6> 
+                                    <!--<h1 class="bs-caption"><sup>$</sup>89</h1>-->                                     
+                                    <a href="tareas.html"> 
+                                        <img class="rounded-circle img-fluid d-block mx-auto" src="lenguaje.png" alt="">
+                                    </a>                                     
+                                    <p>Desafios de lenguaje</p> 
+                                    <ul> 
+                                        <li>
+                                            <b>60 desafios</b>
+                                        </li>                                         
+                                        <p>Estos desafios estan orientados a probar tu capacidadad en el manejo de ....</p> 
+                                    </ul>                                     
+                                    <a href="tareas.html" class="btn btn-success btn-round m-top-40">Comenzar</a> 
+                                </div>                                 
+                            </div>                             
+                        </div>                         
+                    </div>                     
+                </div>                 
+            </section>
+        </section>
+        <script type="text/javascript">
+
+</script>
+    </body>     
+</html>
